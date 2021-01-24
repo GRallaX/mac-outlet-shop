@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>MacOutlet</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/icons/logo.png" alt="logo" id="logo" /></a>
-    <div>
-        <img src="img/icons/cart.svg" alt="cart" style="width: 3%;">
-    </div>
+      <a href="index.html"
+        ><img src="img/icons/logo.png" alt="logo" id="logo"
+      /></a>
+      <div id="cart">
+        <img src="img/icons/cart.svg" alt="cart" style="width: 27px" />
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div id="banner">
+        <h1 id="banner_product_name">iPad Air</h1>
+        <button class="add_to_cart_btn">Add to cart</button>
+      </div>
+    </main>
     <script src="js/items.js"></script>
     <script src="js/index.js"></script>
   </body>
