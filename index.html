@@ -12,21 +12,38 @@
     <title>MacOutlet</title>
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        ><img src="img/icons/logo.png" alt="logo" id="logo"
-      /></a>
-      <div id="cart">
-        <img src="img/icons/cart.svg" alt="cart" style="width: 27px" />
-      </div>
-    </header>
-    <main>
-      <div id="banner">
-        <h1 id="banner_product_name">iPad Air</h1>
-        <button class="add_to_cart_btn">Add to cart</button>
-      </div>
-      <ul id="devices_list"></ul>
-    </main>
+    <div id="wrpapper">
+      <header>
+        <div id="header">
+          <a href="index.html"
+            ><img src="img/icons/logo.png" alt="logo" id="logo"
+          /></a>
+          <div id="cart">
+            <img src="img/icons/cart.svg" alt="cart" style="width: 27px" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="banner">
+          <h1 id="banner_product_name">iPad Air</h1>
+          <button class="add_to_cart_btn">Add to cart</button>
+        </div>
+        <div id="sort_container">
+          <input
+            type="text"
+            placeholder="Enter device name..."
+            id="searchByName"
+          />
+          <select name="sort devices" id="sort_devices">
+            <option value="default" selected>Default</option>
+            <option value="ascending">Ascending price</option>
+            <option value="descending">Descending price</option>
+            <option value="rating">Reviews</option>
+          </select>
+        </div>
+        <ul id="devices_list"></ul>
+      </main>
+    </div>
     <script src="js/items.js"></script>
     <script src="js/index.js"></script>
   </body>
